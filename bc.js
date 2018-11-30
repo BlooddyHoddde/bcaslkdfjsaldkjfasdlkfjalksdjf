@@ -15,7 +15,8 @@ return;
   message.guild.members.forEach(m => {
 if(!message.member.hasPermission('ADMINISTRATOR')) return;
       var bc = new Discord.RichEmbed()
-      .addField('# | الرسالة ', args)
+      .addField('**Server name **', `*** ⇝ ${message.guild.name}***`)   
+      .addField('***Message***', args)
       .setThumbnail(message.guild.iconURL)
       .setColor('RANDOM')
       m.sendMessage(args)
@@ -23,6 +24,7 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return;
          if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply(":x: **ليس لديك صلاحية للنشر هنا**");
   const Abcctd = new Discord.RichEmbed()   
   .setColor('RANDOM')
+  .addField('Done By:', "<@" + message.author.id + ">")
   message.channel.sendEmbed(Abcctd);          
 }
 } else {
