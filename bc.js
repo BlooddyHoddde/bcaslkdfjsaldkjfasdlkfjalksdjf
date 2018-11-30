@@ -19,7 +19,7 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return;
       .addField('***Message***', args)
       .setThumbnail(message.guild.iconURL)
       .setColor('RANDOM')
-      m.sendMessage(args)
+      m.send(``,{embed: bc});
   });
          if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply(":x: **ليس لديك صلاحية للنشر هنا**");
   const Abcctd = new Discord.RichEmbed()   
